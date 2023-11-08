@@ -20,8 +20,7 @@ function getRandomDog() {
 		.then(data => {
 			if(data.url.includes('.mp4')) {
 				getRandomDog();
-			}
-			else {
+			} else {
 				dog_result.innerHTML = `<img src=${data.url} alt="dog" />`;
 			}
 		});
