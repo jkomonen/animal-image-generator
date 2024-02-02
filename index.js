@@ -6,6 +6,7 @@ const dog_result = document.getElementById('dog_result');
 cat_btn.addEventListener('click', getRandomCat);
 dog_btn.addEventListener('click', getRandomDog);
 
+// gets a cat
 function getRandomCat() {
 	fetch('https://randomfox.ca/floof/')
 		.then(res => res.json())
