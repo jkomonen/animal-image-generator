@@ -14,6 +14,7 @@ function getRandomCat() {
 		});
 }
 
+// gets a dog
 function getRandomDog() {
 	fetch('https://random.dog/woof.json')
 		.then(res => res.json())
